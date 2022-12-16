@@ -10,9 +10,9 @@ interface Props {
     setCompletedTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 
-const TodoList: React.FC<Props> = ({
+const TodoList = ({
   todos, setTodos, completedTodos, setCompletedTodos
-}) => {
+}: Props) => {
   return (
     <div className="container">
       <Droppable droppableId='TodosList'>
